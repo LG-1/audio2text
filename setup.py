@@ -14,7 +14,7 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name='audio2text',
-    version='1.0.1',
+    version='1.0.2',
     description='This package is for extract text from audio/video file',
 
     # The project's main homepage.
