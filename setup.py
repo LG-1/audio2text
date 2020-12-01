@@ -4,21 +4,21 @@ from os import path
 import unittest
 
 
-def speech2text_test_suite():
+def audio2text_test_suite():
     test_loader = unittest.TestLoader()
-    test_suite = test_loader.discover('test')
+    test_suite = test_loader.discover('tests')
     return test_suite
 
 
 here = path.abspath(path.dirname(__file__))
 
 setup(
-    name='speech2text',
-    version='1.0.0',
+    name='audio2text',
+    version='1.0.1',
     description='This package is for extract text from audio/video file',
 
     # The project's main homepage.
-    url='https://github.com/LG-1/speech2text',
+    url='https://github.com/LG-1/audio2text',
 
     # Author details
     author='LG',
@@ -33,7 +33,7 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 5',
+        'Development Status :: 5 - Production/Stable',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
@@ -47,7 +47,7 @@ setup(
     ],
 
     # What does your project relate to?
-    keywords='text nlp machine-learning chinese word2vec',
+    keywords='speech-recognition stt asr english speech-to-text pytorch audio2text',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
@@ -83,5 +83,5 @@ setup(
     # "scripts" keyword. Entry points provide cross-platform support and allow
     # pip to create the appropriate form of executable for the target platform.
     entry_points={},
-    test_suite="setup.speech2text_test_suite"
+    test_suite="setup.audio2text_test_suite"
 )
